@@ -1,0 +1,12 @@
+##
+#	SCRABBLEHAX ~ A Simple Stack Smash Exploit or the PSP
+#	by ChampionLeake 2018
+##
+
+$ra control offset in save game: 0x33
+0xE0 = PoC Payload Offset
+
+0x08000000 + 0x00CEAD78 = 0x08CEAD78: payload addres
+
+Useful PSP SDK Calls:
+088C3798 = sceKernelExitGame
