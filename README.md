@@ -3,7 +3,7 @@ Allows unsigned code execution on official Sony PSP firmware
 ###
 This exploit was only to learn about PSP Exploitation. This really seems fun actually and much simplier than the DS.
 So yeah, this exploit is basically useless since there are much better exploits on the PSP/Vita. The explit will only run a simple
-color flasher by Flankler. I did some small enhancements
+color flasher by Flankler. I did some small enhancements. I'll add in a binary loader later once I fix some things.
 ###
 # How do I trigger the exploit?
 * Load the scrabblehax profile from the first slot.
