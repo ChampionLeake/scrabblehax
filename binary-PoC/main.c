@@ -9,7 +9,7 @@ void FillVRAM(u32 color)
 {
 	int i;
 
-	for(i = 0x44000000; i < 0x44100000; i += 7)
+	for(i = 0x44000000; i < 0x44100000; i += 4)
 	{
 		(((u32 *)i)[0]) = color;
 	}
