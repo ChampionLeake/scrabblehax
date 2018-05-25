@@ -15,9 +15,6 @@ Very small and simple writeup:
 --Done
 ########################################################################################################
 
-
-
-
 0x33 = $ra control's offset in savegame
 0xE0 = PoC Payload Offset
 
