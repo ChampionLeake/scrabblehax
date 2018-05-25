@@ -4,6 +4,7 @@
 
 #######################################################################################################
 Very small and simple writeup:
+-------------------------------------------------------------------------------------------------------
 --used a very long extensive string with the profile name. (AAs or 0x41s)
 --Crashed and overwritten $ra and other stack registers
 --Refined the PoC to stop crashing at 0x41414141.
