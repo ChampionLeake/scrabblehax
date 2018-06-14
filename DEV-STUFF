@@ -1,6 +1,6 @@
 /* SCRABBLEHAX 2018  */
 /* by ChampionLeake */
-/* A simple PSP stack smash exploit /*
+/* A simple PSP stack smash exploit */
 
 #######################################################################################################
 Very small and simple writeup:
@@ -21,4 +21,4 @@ Very small and simple writeup:
 0x08000000 + 0x00CEAD78 = 0x08CEAD78: payload address
 
 Simple PSP SDK Calls:
-0x088C3798 = sceKernelExitGame /* SDK that was used to inital test my exploit */
+0x088C3798 = sceKernelExitGame /* SDK that was used to initial test my exploit */
