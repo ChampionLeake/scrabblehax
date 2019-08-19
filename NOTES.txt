@@ -1,0 +1,31 @@
+/* SCRABBLEHAX v1.1 2019 */
+/* by ChampionLeake */
+/* A "Scrabble" PSP stack smash exploit */
+
+Vulnerability: Stack Buffer Overflow via Profile name
+The profile name is limited to 3 characters long, but the string length/size is unchecked. One can use an excessive large profile name to overwrite some registers including the return address ($ra).
+
+
+0x33 = $ra control offset in save game
+0xE0 = Location of the injected binary
+0x08000000 + 0x00CEAD78 = 0x08CEAD78: payload address [78 AD CE 08]
+
+
+Simple PSP SDK Calls:
+/* SDK functions that was used as a proof-of-concept */
+
+08C11790:[03E00008]: jr         $ra
+08C11794:[0010510C]: syscall    0x04144 [sceKernelExitGame]
+90 17 C1 08
+
+
+#######################################################################################################
+Very small and simple writeup:
+-------------------------------------------------------------------------------------------------------
+--Used a very long extensive string with the profile name. (AAs or 0x41s)
+--Crashed and overwritten stack registers including the $ra
+--Refined $ra to stop crashing at 0x41414141 (offset 0xE0 in the save game).
+--Look for the game's SDK as a PoC. I choose `sceKernalExitGame` since every PSP game has this function call.
+--Injected the `sceKernalExitGame` address into the location where $ra is controlled.
+--Worked and proceeded to finding a payload address to inject unsigned code :D
+#######################################################################################################
