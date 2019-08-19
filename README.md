@@ -58,7 +58,7 @@ This github repo contains the source code of the Binary-Loader, ColorFlasher pay
 * [wololo](https://twitter.com/frwololo): Writeup to finding exploitable PSP games. (You can find it [here](http://wololo.net/2014/04/18/pspvita-how-to-find-your-own-exploits/))
 * [qwikrazor87](https://twitter.com/qwikrazor87): Binary-Loader
 * [Flankler](https://twitter.com/freakler94): Color Flash Payload
-* TheOct0: Hardware PSP tester foe the exploit
+* [TheOct0](https://twitter.com/theoct0): Hardware PSP tester foe the exploit
 ###
 ## Exploit screenshot:
 <img src="https://cdn.discordapp.com/attachments/346332428589334529/446484573715562506/Capture.JPG" width="320">
